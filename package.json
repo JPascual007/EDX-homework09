@@ -1,0 +1,23 @@
+{
+  "name": "edx-homework09",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPascual007/EDX-homework09.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JPascual007/EDX-homework09/issues"
+  },
+  "homepage": "https://github.com/JPascual007/EDX-homework09#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
