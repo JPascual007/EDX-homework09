@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const questions = async() => {
     const answers = await inquirer
@@ -60,5 +61,19 @@ const questions = async() => {
             name: 'Email',
             message: 'What is your Email address?',
         }
-    ])
+    ]);
 }
+
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile(
+            "Example_README.md", generateMarkdown({...answers,})
+        )
+    });
+}
+
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
+
+init();
