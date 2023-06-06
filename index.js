@@ -3,9 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-const questions = async() => {
-    const answers = await inquirer
-    .createPromptModule([
+const questions = [
         {
             type: 'input',
             name: 'name',
@@ -15,14 +13,9 @@ const questions = async() => {
             type: 'input',
             name: 'description',
             message: 'Briefly describe your project.',
-        },
+        },    
         {
             type: 'input',
-            name: 'Table of Contents',
-            message: 'bleep bloop.',
-        },
-        {
-            type: 'editor',
             name: 'installation',
             message: 'What are the steps required to install your project? Provide a step by step description of how to get the development environment running.',
         },
@@ -61,8 +54,8 @@ const questions = async() => {
             name: 'Email',
             message: 'What is your Email address?',
         }
-    ]);
-}
+    ];
+
 
 function init() {
     inquirer.prompt(questions).then((answers) => {
