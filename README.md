@@ -36,6 +36,10 @@
   ## Usage:
   Start by opening the project's folder and navigate to it via console. Once you find that folder in the integrated terminal, run the command "node index.js" to begin. You will now be presented with a series of prompted questions. Your answers will define the README.md contents with the information you have provided earlier.
 
+  ## Video:
+  Click the link below to view the walkthrough video
+  https://youtu.be/8_xmPyJI0eY
+
   ## Other Contributors:
   Please feel free to contact me via Email or GitHub located below!
   
