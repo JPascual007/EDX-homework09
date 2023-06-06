@@ -1,8 +1,10 @@
+// Import External Data
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+// Array of questions for the User
 const questions = [
         {
             type: 'input',
@@ -56,7 +58,7 @@ const questions = [
         }
     ];
 
-
+// Function to generate README
 function init() {
     inquirer.prompt(questions).then((answers) => {
         writeToFile(
@@ -65,8 +67,9 @@ function init() {
     });
 }
 
+// Function to Write README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
-
+// Initializes the program
 init();
