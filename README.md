@@ -29,11 +29,9 @@
   Navigate to https://github.com/JPascual007/EDX-homework09, click on the big green Code button and select download .zip file within the dropdown menu
   
   ## Images:
-  ![Project Screenshot(./imagePathHere.png)(alt Text)]
+  <img src="./images/Code Zip File.png" alt="Shows the location of the .zip file within the dropdown menu by clicking the Code Button"/>
   
-  ![Project Screenshot(./imagePathHere.png)(alt Text)]
-  
-  ![Project Screenshot(./imagePathHere.png)(alt Text)]
+  <img src="./images/Running the Program.png" alt="Run 'node index.js' inside the integrated terminal for VS Code"/>
 
   ## Usage:
   Start by opening the project's folder and navigate to it via console. Once you find that folder in the integrated terminal, run the command "node index.js" to begin. You will now be presented with a series of prompted questions. Your answers will define the README.md contents with the information you have provided earlier.
