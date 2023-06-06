@@ -8,7 +8,7 @@ const questions = async() => {
     .createPromptModule([
         {
             type: 'input',
-            name: 'title',
+            name: 'name',
             message: "What is your project's name?"
         },
         {
