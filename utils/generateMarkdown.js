@@ -1,7 +1,7 @@
 // function to generate markdown for README
 
 function generateMarkdown(answers) {
-    return `# Project:${answers.name}
+    return `# Project: ${answers.name}
   
   ## Description:
   ${answers.description}
@@ -21,7 +21,7 @@ function generateMarkdown(answers) {
   ${answers.installation}
 
   ## License:
-  [![License:${answers.license}](https://img.shields.io/badge/License-${answers.license}-yellow.svg)](https://opensource.org/licenses/${answers.license})
+  [![License:${answers.License}](https://img.shields.io/badge/License-${answers.License}-yellow.svg)](https://opensource.org/licenses/${answers.License})
   
   ## Usage:
   ${answers.Usage}
@@ -34,16 +34,16 @@ function generateMarkdown(answers) {
   ![Project Screenshot(./imagePathHere.png)(alt Text)]
   
   ## Other Contributors:
-  ${answers.contributors}
+  ${answers.Contributors}
   
   ## Test Command: 
-  To test type ${answers.test} into the terminal
+  To test type ${answers.Tests} into the terminal
   
   ## My Github Username: 
-  Check out more project on my Github at https://github.com/${answers.gitHub}
+  Check out more project on my Github at https://github.com/${answers.GitHub}
   
   ## My Email Address:
-  If you have any questions please feel free to email me at ${answers.email}
+  If you have any questions please feel free to email me at ${answers.Email}
   `;
   }
   
